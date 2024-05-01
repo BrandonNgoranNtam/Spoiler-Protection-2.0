@@ -1,11 +1,11 @@
-(function() {
+(function () {
     "use strict";
 
     function spoilersLogicConfig() {
         this.sendGoogleTrackEvent = false;
     };
 
-    app.ui.modules.spoilersLogic = app.ui.modules.spoilersLogic  || (function() {
+    app.ui.modules.spoilersLogic = app.ui.modules.spoilersLogic || (function () {
         return {
 
             //#region properties and consts
@@ -17,16 +17,16 @@
 
             //#region init
 
-            extendMessage: function() {
+            extendMessage: function () {
                 core.utilities.message.ACTION_RELOAD_CURRENT_TAB_SPOILERS = "reloadCurrentTabSpoilers";
 
-                core.utilities.message.sendReloadCurrentTabSpoilersMessage = function(successCallback) {
+                core.utilities.message.sendReloadCurrentTabSpoilersMessage = function (successCallback) {
                     var message = core.utilities.message.getMessage(core.utilities.message.ACTION_RELOAD_CURRENT_TAB_SPOILERS);
                     browser.tabs.sendMessageToActiveTabs(message, successCallback)
                 };
             },
 
-            initSettingsDefaultValues: function() {
+            initSettingsDefaultValues: function () {
                 core.utilities.settings.spoilers = {};
                 core.utilities.settings.spoilers.spoilerStringList = [];
                 core.utilities.settings.spoilers.isSpoilerNameVisible = true;
@@ -36,9 +36,9 @@
                 core.utilities.settings.spoilers.isVideosVisible = true;
             },
 
-            extendSetting: function() {
+            extendSetting: function () {
                 //spoilerStringList
-                core.utilities.settings.addSpoilersToSpoilerSettings =  function(spoilerList, successCallback) {
+                core.utilities.settings.addSpoilersToSpoilerSettings = function (spoilerList, successCallback) {
                     var spoilerStringList = core.utilities.settings.spoilers.spoilerStringList;
                     $.each(spoilerList, function (key, value) {
                         var spoilerText = value.trimString();
@@ -52,7 +52,7 @@
                     core.utilities.settings.updateSettingsInStorage(successCallback);
                 };
 
-                core.utilities.settings.removeSpoilersFromSettings =  function(spoilersToRemove, successCallback) {
+                core.utilities.settings.removeSpoilersFromSettings = function (spoilersToRemove, successCallback) {
                     var spoilerStringList = core.utilities.settings.spoilers.spoilerStringList;
                     $.each(spoilersToRemove, function (key, value) {
                         spoilerStringList.remove(value);
@@ -62,59 +62,59 @@
                 };
 
                 //isSpoilerNameVisible
-                core.utilities.settings.toggleIsSpoilerNameVisible = function(callbackFunction) {
-                    core.utilities.settings.toggleBooleanSettingInStorage(app.ui.modules.spoilersLogic.moduleName,"isSpoilerNameVisible", callbackFunction)
+                core.utilities.settings.toggleIsSpoilerNameVisible = function (callbackFunction) {
+                    core.utilities.settings.toggleBooleanSettingInStorage(app.ui.modules.spoilersLogic.moduleName, "isSpoilerNameVisible", callbackFunction)
                 };
 
                 //isSpoilerCategoryVisible
-                core.utilities.settings.toggleIsSpoilerCategoryVisible = function(callbackFunction) {
-                    core.utilities.settings.toggleBooleanSettingInStorage(app.ui.modules.spoilersLogic.moduleName,"isSpoilerCategoryVisible", callbackFunction)
+                core.utilities.settings.toggleIsSpoilerCategoryVisible = function (callbackFunction) {
+                    core.utilities.settings.toggleBooleanSettingInStorage(app.ui.modules.spoilersLogic.moduleName, "isSpoilerCategoryVisible", callbackFunction)
                 };
 
                 //isSpoilerListVisible
-                core.utilities.settings.toggleIsSpoilerListVisible = function(callbackFunction) {
+                core.utilities.settings.toggleIsSpoilerListVisible = function (callbackFunction) {
                     core.utilities.settings.toggleBooleanSettingInStorage(app.ui.modules.spoilersLogic.moduleName, "isSpoilerListVisible", callbackFunction)
                 };
 
                 //isImagesVisible
-                core.utilities.settings.toggleIsImagesVisible = function(callbackFunction) {
+                core.utilities.settings.toggleIsImagesVisible = function (callbackFunction) {
                     core.utilities.settings.toggleBooleanSettingInStorage(app.ui.modules.spoilersLogic.moduleName, "isImagesVisible", callbackFunction)
-                }; 
-                
-                 //isVideosVisible
-                 core.utilities.settings.toggleIsVideosVisible = function(callbackFunction) {
+                };
+
+                //isVideosVisible
+                core.utilities.settings.toggleIsVideosVisible = function (callbackFunction) {
                     core.utilities.settings.toggleBooleanSettingInStorage(app.ui.modules.spoilersLogic.moduleName, "isVideosVisible", callbackFunction)
-                };   
+                };
             },
 
             //#endregion
 
             //#region public functions
 
-            getIsSpoilerNameVisible: function() {
+            getIsSpoilerNameVisible: function () {
                 return core.utilities.settings.spoilers.isSpoilerNameVisible;
             },
 
-            getIsSpoilerCategoryVisible: function() {
+            getIsSpoilerCategoryVisible: function () {
                 return core.utilities.settings.spoilers.isSpoilerCategoryVisible;
             },
 
-            getIsSpoilerListVisible: function() {
+            getIsSpoilerListVisible: function () {
                 return core.utilities.settings.spoilers.isSpoilerListVisible;
             },
 
-            getIsImagesVisible: function() {
+            getIsImagesVisible: function () {
                 return core.utilities.settings.spoilers.isImagesVisible;
             },
 
-            getIsVideosVisible: function() {
+            getIsVideosVisible: function () {
                 return core.utilities.settings.spoilers.isVideosVisible;
             },
 
-            
-            
 
-            toggleSpoilerNameVisibility: function() {
+
+
+            toggleSpoilerNameVisibility: function () {
                 //toggleBooleanSettingInStorage passes the new boolean value to the sendReloadCurrentTabSpoilersMessage
                 //to avoid exception we have to call within a function
                 core.utilities.settings.toggleIsSpoilerNameVisible(function () {
@@ -128,7 +128,7 @@
                 }
             },
 
-            toggleSpoilerCategoryVisibility: function() {
+            toggleSpoilerCategoryVisibility: function () {
                 //toggleBooleanSettingInStorage passes the new boolean value to the sendReloadCurrentTabSpoilersMessage
                 //to avoid exception we have to call within a function
                 core.utilities.settings.toggleIsSpoilerCategoryVisible(function () {
@@ -142,7 +142,7 @@
                 }
             },
 
-            toggleSpoilerListVisibility: function(uiCallback) {
+            toggleSpoilerListVisibility: function (uiCallback) {
                 core.utilities.settings.toggleIsSpoilerListVisible(uiCallback);
                 //NOTE: no need to put in callback, doesn't matter when we call the GA tracking
                 var config = app.ui.modules.spoilersLogic.config;
@@ -151,11 +151,11 @@
                 }
             },
 
-            toggleImagesVisibility: function() {
-                
+            toggleImagesVisibility: function () {
+
                 //toggleImagesVisibility passes the new boolean value to the sendReloadCurrentTabSpoilersMessage
                 //to avoid exception we have to call within a function
-                core.utilities.settings.toggleIsImagesVisible(function () {                    
+                core.utilities.settings.toggleIsImagesVisible(function () {
                     if (app.ui.modules.spoilersLogic.getIsImagesVisible()) {
                         browser.tabs.reloadActiveTabs();
                     } else {
@@ -171,11 +171,11 @@
                 }
             },
 
-            toggleVideosVisibility: function() {
-                
+            toggleVideosVisibility: function () {
+
                 //toggleVideosVisibility passes the new boolean value to the sendReloadCurrentTabSpoilersMessage
                 //to avoid exception we have to call within a function
-                core.utilities.settings.toggleIsVideosVisible(function () {                    
+                core.utilities.settings.toggleIsVideosVisible(function () {
                     if (app.ui.modules.spoilersLogic.getIsVideosVisible()) {
                         browser.tabs.reloadActiveTabs();
                     } else {
@@ -191,22 +191,22 @@
                 }
             },
 
-            getSortedSpoilerStringList:  function() {
+            getSortedSpoilerStringList: function () {
                 var orderedSpoilerStringList = core.utilities.settings.spoilers.spoilerStringList;
                 orderedSpoilerStringList.sort(core.utilities.utils.naturalCompare);
                 return orderedSpoilerStringList;
             },
 
-            addSpoiler:  function(spoilerListText, settingChangedCallback) {
+            addSpoiler: function (spoilerListText, settingChangedCallback) {
                 var spoilerList = spoilerListText.split(",");
                 core.utilities.settings.addSpoilersToSpoilerSettings(spoilerList, settingChangedCallback);
             },
 
-            removeSpoiler: function(spoilerToRemove, settingChangedCallback) {
+            removeSpoiler: function (spoilerToRemove, settingChangedCallback) {
                 core.utilities.settings.removeSpoilersFromSettings(new Array(spoilerToRemove), settingChangedCallback);
             },
 
-            reloadTabsWithNewSpoilerList:  function() {
+            reloadTabsWithNewSpoilerList: function () {
                 core.utilities.message.sendReloadCurrentTabSpoilersMessage();
             }
 
