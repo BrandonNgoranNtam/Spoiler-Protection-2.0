@@ -1,0 +1,429 @@
+{
+  "app_name": {
+    "message": "Spoiler Protection 2.0"
+  },
+  "app_description": {
+    "message": "Spoiler Protection 2.0 - NINCS TÖBB SPOILER :)"
+  },
+  "all_rights_reserved": {
+    "message": "&copy; Spoiler Protection 2.0 - 2019. Minden jog fenntartva."
+  },
+  "subscribe_text": {
+    "message": "<b>Iratkozz fel</b> nehogy lemaradj az új funkciókról és az új böngésző kiegészítőkről"
+  }, 
+  "page_top": {
+    "message": "Az oldal tetejére"
+  }, 
+  "menu": {
+    "message": "Menü"
+  }, 
+  "available_for_mobile": {
+    "message": "Mostantól a <u>Spoiler Protection 2.0</u> elérhető <b>telefonon</b>, használd <u>Firefox for Android</u>-al"
+  }, 
+  "support_text": {
+    "message": "ingyenes mindenkinek, támogatva nagylelkű adományozók által"
+  },   
+  "please_select": {
+    "message": "Kérlek válassz"
+  },
+  "select": {
+    "message": "Válassz"
+  },
+  "follow_us": {
+    "message": "Kövess"
+  },
+  "yes": {
+    "message": "Igen"
+  },
+  "no": {
+    "message": "Nem"
+  },
+  "cancel": {
+    "message": "Mégse"
+  },
+  "delete": {
+    "message": "Törlés"
+  },
+  "reset": {
+    "message": "Alaphelyzet"
+  },
+  "import": {
+    "message": "Importálás"
+  },
+  "success": {
+    "message": "Siker"
+  },
+  "error": {
+    "message": "Hiba"
+  },
+  "warning": {
+    "message": "Figyelmeztetés"
+  },
+  "close": {
+    "message": "Bezár"
+  },  
+  "new_extensions": {
+    "message": "Új böngésző kiegészítők"
+  },
+  "show": {
+    "message": "Megmutat"
+  },
+  "item_already_exists_with_name": {
+    "message": "Már létezik ilyen nevű elem"
+  },
+  "name_required": {
+    "message": "A név kitöltése kötelező"
+  },
+  "delete_question": {
+    "message": "Biztos törölni akarja ezt az elemet?"
+  },
+  "edit": {
+    "message": "Szerkesztés"
+  },
+  "enable_disable": {
+    "message": "Engedélyezés/tiltás"
+  },
+  "remove": {
+    "message": "Törlés"
+  },
+  "name": {
+    "message": "Név"
+  },
+  "save": {
+    "message": "Mentés"
+  },
+  "list": {
+    "message": "Lista"
+  },
+  "description": {
+    "message": "Leírás"
+  },
+  "download": {
+    "message": "Letöltés"
+  },
+  "facebook": {
+    "message": "Facebook"
+  },
+  "ask_in_facebook_group": {
+    "message": "Kérdezz a Facebookon"
+  },
+  "join": {
+    "message": "Csatlakozom"
+  },
+  "please_share": {
+    "message": "Kérlek oszd meg"
+  },
+  "share": {
+    "message": "Megosztás"
+  },
+  "share_earn_money": {
+    "message": "Oszd meg és keress pénzt"
+  },
+  "on": {
+    "message": "Be"
+  },
+  "off": {
+    "message": "Ki"
+  },
+  "list_on": {
+    "message": "Lista be"
+  },
+  "list_off": {
+    "message": "Lista ki"
+  },
+  "shown": {
+    "message": "Mutatva"
+  },
+  "hidden": {
+    "message": "Elrejtve"
+  },
+  "version": {
+    "message": "Verzió"
+  },
+  "language": {
+    "message": "Nyelv"
+  },
+  "type": {
+    "message": "Típus"
+  },
+  "support_patreon": {
+    "message": "Támogass &#36;1/hó"
+  },
+  "support_kofi": {
+    "message": "Vagy a ko-fi-n"
+  },
+  "dont_forget_to_smile": {
+    "message": "Ne felejts el ma mosolyogni"
+  },
+  "save_successful": {
+    "message": "Mentés sikeres"
+  },
+
+  "extension_on": {
+    "message": "Kiegészítő be"
+  },
+  "extension_off": {
+    "message": "Kiegészítő ki"
+  },
+  "we_know_we_can_do_better": {
+    "message": "<b>Tudjuk, hogy jobban is csinálhatjuk.</b><br/>Ha eszedbe jut új funkció, illetve bármilyen javaslatod van, vagy hibát jelentenél be"
+  },
+  "tell_us": {
+    "message": "Mond el"
+  },
+  "settings": {
+    "message": "Beállítások"
+  },
+  "reset_extension": {
+    "message": "Alapértékek visszaállítása"
+  },
+  "reset_confirm_text": {
+    "message": "Biztos vissza akarsz állni az alap beállításokra?\nMinden jelenlegi beállítás elveszik!"
+  },
+  "site_url_part_required": {
+    "message": "Weboldal url részlet kötelező"
+  },
+  "site": {
+    "message": "Weboldal url részlet"
+  },
+  "enter_classes": {
+    "message": "Class lista - Elválasztó: ','"
+  },
+  "enter_ids": {
+    "message":"Id lista  - Elválasztó: ',' "
+  },
+  "enter_node_names": {
+    "message": "Node név lista - Elválasztó: ','"
+  },
+  "enter_remove_filters": {
+    "message": "Eltávolítás szűrő lista - Elválasztó ','"
+  },
+  "spoiler_context": {
+    "message": "Spoiler kontextus"
+  },
+  "spoiler_context_description": {
+    "message": "A főbb weboldalakon (twitter, facebook, reddit) megoldottuk azt, hogy ne csak a szöveget, hanem a spoiler szöveget körülvevő kontextust is elrejtsük - pl egy szöveghez tartozó képet -, de mi nem tudjuk ezt megcsinálni a világ összes weboldalára.<br/>Ezzel a funkcióval a kedvenc weboldalaidon meg tudod oldani ezt a problémát: hogy elrejtsd a spoilerhez kapcsolódó egyéb tartalmakat is.<br/>Ebben a rövid videóban elmagyarázzuk, hogyan tudod megcsinálni: (hamarosan...)"
+  },
+  "import_category": {
+    "message": "Kategória importálása"
+  },
+  "manage_categories": {
+    "message": "Kategóriák kezelése"
+  },  
+  "import_category_success": {
+    "message": "Kategória importálása sikeres"
+  },
+  "are_you_sure_to_import_category": {
+    "message": "Biztos akarod importálni ezt a kategóriát: "
+  },
+  "category_imported": {
+    "message": "Sikeresen beimportáltad ezt a kategóriát: "
+  },
+  "uploader": {
+    "message": "Feltöltő"
+  },
+  "spoiler_count": {
+    "message": "Spoiler szám"
+  },
+  "support_the_uploader": {
+    "message": "Támogathatod a feltöltőt: "
+  },
+  "support_patreon_uploder": {
+    "message": "Támogasd a feltöltőt Patreon-on"
+  },
+  "support_kofi_uploder": {
+    "message": "Vagy vegyél neki egy kávét"
+  },
+  "share_list_on_twitter": {
+    "message": "Oszd meg a listát twitteren"
+  },
+  "share_list_on_facebook": {
+    "message": "Oszd meg a listát facebookon"
+  },
+  "waiting_for_approval": {
+    "message": "Jóváhagyásra vár"
+  },
+  "show_the_list": {
+    "message": "Mutasd a listát"
+  },
+  "edit_category": {
+    "message": "Kategória szerkesztése"
+  },
+  "remove_category": {
+    "message": "Kategória törlése"
+  },
+  "remove_spoiler_text": {
+    "message": "Spoiler szöveg törlése"
+  },
+  "other": {
+    "message": "Egyéb"
+  },
+  "movie": {
+    "message": "Mozifilm"
+  },
+  "tv_show": {
+    "message": "TV sorozat"
+  },
+  "game": {
+    "message": "Játék"
+  },
+  "sport": {
+    "message": "Sport"
+  },
+  "politics": {
+    "message": "Politika"
+  },
+  "share_your_category_with_other_people": {
+    "message": "Oszd meg a kategóriát másokkal"
+  },
+  "expiration_date_explanation": {
+    "message": "Ennek a dátumnak nincs hatása a te spoiler listádra! Ezután a dátum után a megosztott kategória nem jelenik meg a weboldalon, ahonnan mások importálhatják"
+  },
+  "expiration_date": {
+    "message": "Érvényesség dátuma"
+  },
+  "earn_money": {
+    "message": "A barátaid/követőid támogathatnak <u class='color-red' style='font-weight: bold'>pénzzel</u> a ko-fi.com-on, vagy patreon.com-on keresztül, hogy még több kategóriát ossz meg"
+  },
+  "share_warning": {
+    "message": "Csak olyan kategóriát ossz meg, ami EGY témára vonatkozik (egy sorozat, egy film...), legalább 5 kulcsszót addj meg, és ne spoilerezz :)<br/>Fenntartjuk a jogot, hogy ne hagyjuk jóvá a kategóriádat."
+  },
+  "your_kofi_username": {
+    "message": "A te ko-fi felhasználói neved"
+  },
+  "your_patreon_username": {
+    "message": "A te patreon felhasználói neved"
+  },
+  "export_success_text": {
+    "message": "Az exportálás sikeres és a kategóriádat hamarosan jóváhagyjuk.<br/>Mostmár megoszthatod a kategóriádat itt<br/>https://spoilerprotection.wecdev.com/categorylist"
+  },
+  "just_for_myself": {
+    "message": "Csak magamnak"
+  },
+  "visit_page_and_share": {
+    "message": "Elnézek a weboldalra, és megoszom"
+  },
+  "spoiler_name_on": {
+    "message": "Kulcsszó mutatása az oldalon"
+  },
+  "spoiler_name_off": {
+    "message": "Kulcsszó elrejtése az oldalon"
+  },
+  "category_name_on": {
+    "message": "Kategória mutatása az oldalon"
+  },
+  "category_name_off": {
+    "message": "Kategória elrejtése az oldalon"
+  },
+  "images_on": {
+    "message": "Képek be"
+  },
+  "images_off": {
+    "message": "Képek ki"
+  },
+  "videos_on": {
+    "message": "Videók be"
+  },
+  "videos_off": {
+    "message": "Videók ki"
+  },
+  "add_spoilers": {
+    "message": "Hozzáadás"
+  },
+  "enter_spoilers": {
+    "message": "Trónok harca,Havas Jon,Tyrion,Daenerys"
+  },
+  "save_category": {
+    "message": "Kategória mentése"
+  },
+  "new_category": {
+    "message": "Új kategória"
+  },
+  "spoiler_keywords": {
+    "message": "Spoiler keresőszavak"
+  },
+  "categories": {
+    "message": "Kategóriák"
+  },
+  "category_spoiler_text_required": {
+    "message": "Spoiler lista üres!"
+  },
+  "category_name_required": {
+    "message": "Kategória neve kötelező!"
+  },
+  "existing_category": {
+    "message": "Már létező kategória"
+  },
+  "remove_white_list_url_text": {
+    "message": "Kivétel törlése"
+  },
+  "white_list": {
+    "message": "Kivételek"
+  },
+  "add_white_list_url": {
+    "message": "Kivétel url hozzáadása"
+  },
+  "enter_white_list_url": {
+    "message": "pl google* vagy pontos url"
+  },
+  "background_color":{
+    "message": "Háttérszín"
+  },
+
+  "yeeeeej": {
+    "message": "Yeeeeej"
+  },
+  "update_contains_the_following_changes": {
+    "message": "Ez a frissítés a következő változásokat tartalmazza:"
+  },
+  "earlier_updates": {
+    "message": "Korábbi frissítések"
+  },
+  "recent_updates": {
+    "message": "Mostani frissítések"
+  },
+  "we_love_old_friends": {
+    "message": "<img width='64' height='64' src='../images/icon128.png' alt='' title=''> a régi barátokat!"
+  },
+  "friends_unprotected": {
+    "message": "Sok barátod védtelen!"
+  },
+  "update_success": {
+    "message": "A Spoiler Protection 2.0 sikeresen frissült!"
+  },
+
+
+  "welcome": {
+    "message": "Helló"
+  },
+  "introducing_features": {
+    "message": "A működés bemutatása"
+  },
+  "install_success": {
+    "message": "A Spoiler Protection 2.0 sikeresen települt!"
+  },
+  "we_love_new_friends": {
+    "message": "<img width='64' height='64' src='../images/icon128.png' alt='' title=''> az új barátokat!"
+  },    
+  "rid_of_spoilers_text": {
+    "message": "Ez a bővítmény segít, hogy elrejtsd a nem kívánt spoilereket, amit nem szeretnél a képernyőn látni. Elrejtheted a spoilereket..."
+  },
+  "from_facebook": {
+    "message": "facebook-on"
+  },
+  "from_twitter": {
+    "message": "twitter-en"
+  },
+  "from_youtube": {
+    "message": "youtube-on"
+  },
+  "from_google": {
+    "message": "google-ön"
+  },
+  "from_news_sites": {
+    "message": "híroldalakon"
+  },
+  "from_etc": {
+    "message": "stb..."
+  } 
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spoiler Protection 2.0</title>
+    <meta name="description" content="Spoiler Protection - NO MORE SPOILER :)" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <!-- ui/core module css START -->
+    <link rel="stylesheet" href="../core/ui/core/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../core/ui/core/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="../core/ui/core/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../core/ui/core/common.css" />
+    <link rel="stylesheet" href="../core/ui/core/sprite.css" />
+
+    <link rel="stylesheet" href="../core/ui/core/jquery/jquery-ui.css" />        
+
+    <!-- ui/controls/toggler css START -->
+    <link rel="stylesheet" href="../core/ui/controls/toggler/bootstrap-toggle/bootstrap-toggle.css" />
+    <link rel="stylesheet" href="../core/ui/controls/toggler/toggler.css" />
+    <!-- ui/controls/selectize css START -->
+    <link rel="stylesheet" href="../core/ui/controls/selectize/jquery-selectize/selectize.css" />
+    <link rel="stylesheet" href="../core/ui/controls/selectize/selectize.css" />
+    <!-- ui/controls/colorpicker css START -->
+    <link rel='stylesheet' href='../core/ui/controls/colorpicker/spectrum.css' />
+    <!-- ui/controls/confirm css START -->
+    <link rel="stylesheet" href="../core/ui/controls/confirm/jquery-confirm.css" />
+    <!-- ui/controls/datepicker css START -->
+    <link rel="stylesheet" href="../core/ui/controls/datepicker/datepicker.css" />
+
+    <!-- ui/modules/shareControl css START -->
+    <link rel="stylesheet" href="../core/ui/modules/share/jssocials/jssocials.css" />
+    <link rel="stylesheet" href="../core/ui/modules/share/jssocials/jssocials-theme-flat.css" />
+    <link rel="stylesheet" href="../core/ui/modules/share/horizontalShareControl.css" />
+    <!-- ui/modules/openPatreonUrlControl css START -->
+    <link rel="stylesheet" href="../core/ui/modules/openPatreonUrl/openPatreonUrlControl.css" />
+    <!-- popup css START -->
+    <link rel="stylesheet" href="popup.css" />
+
+
+    <!-- init js START -->
+    <script src="../core/init.js"></script>
+    <!-- data js START -->
+    <script src="../core/data/languages.js"></script>
+    <!-- ui/core js START -->
+    <script src="../core/ui/core/jquery/jquery-3.2.1.js"></script>
+    <script src="../core/ui/core/jquery/jquery-ui.js"></script>
+    <script src="../core/ui/core/bootstrap/bootstrap.js"></script>
+    <script src="../core/ui/core/extend.jquery.js"></script>
+    <!-- extends js START -->
+    <script src="../core/extends/extend.prototypes.js"></script>
+    <script src="../core/extends/extend.String.normalize.js"></script>
+    <script src="../core/extends/nativeAPIs/extend.i18n.js"></script>
+    <script src="../core/extends/nativeAPIs/extend.tabs.js"></script>
+    <!-- utilities js START -->
+    <script src="../core/utilities/utils.js"></script>
+    <script src="../core/utilities/errorHandler.js"></script>
+    <script src="../core/utilities/settings.js"></script>
+    <script src="../core/utilities/message.js"></script>
+    <script src="../core/utilities/googleAnalitics.js"></script>
+    <!-- ui/controls js START -->
+    <script src="../core/ui/controls/button.js"></script>
+    <!-- ui/controls/toggler js START -->
+    <script src="../core/ui/controls/toggler/bootstrap-toggle/bootstrap-toggle.js"></script>
+    <script src="../core/ui/controls/toggler/toggler.js"></script>
+    <!-- ui/controls/selectize js START -->
+    <script src="../core/ui/controls/selectize/jquery-selectize/selectize.js"></script>
+    <script src="../core/ui/controls/selectize/selectize.js"></script>
+    <!-- ui/controls/confirm js START -->
+    <script src="../core/ui/controls/confirm/jquery-confirm.js"></script>
+    <!-- ui/controls/datepicker js START -->
+    <script src="../core/ui/controls/datepicker/datepicker.js"></script>
+
+    <!-- ui/controls/colorpicker js START -->
+    <script src='../core/ui/controls/colorpicker/spectrum.js'></script>
+
+    <!-- ui/utilities js START -->
+    <script src="../core/ui/utilities/ui.js"></script>
+    <!-- ui/modules/openPatreonUrlControl js START -->
+    <script src="../core/ui/modules/openPatreonUrl/openPatreonUrlLogic.js"></script>
+    <script src="../core/ui/modules/openPatreonUrl/openPatreonUrlController.js"></script>
+
+    <script src="../core/ui/modules/resetExtension/resetExtensionLogic.js"></script>
+    <script src="../core/ui/modules/resetExtension/resetExtensionController.js"></script>
+
+    <script src="../core/ui/modules/enableDisableExtension/enableDisableExtensionLogic.js"></script>
+    <script src="../core/ui/modules/enableDisableExtension/enableDisableExtensionController.js"></script>
+
+    <script src="../core/ui/modules/emailFeedback/emailFeedbackLogic.js"></script>
+    <script src="../core/ui/modules/emailFeedback/emailFeedbackController.js"></script>
+
+    <script src="../core/ui/modules/displayCurrentVersion/displayCurrentVersionLogic.js"></script>
+    <script src="../core/ui/modules/displayCurrentVersion/displayCurrentVersionController.js"></script>
+
+    <script src="../core/ui/modules/displayPoweredBy/displayPoweredByLogic.js"></script>
+    <script src="../core/ui/modules/displayPoweredBy/displayPoweredByController.js"></script>
+
+    <script src="../core/ui/modules/elementMarker/elementMarkerLogic.js"></script>
+    <script src="../core/ui/modules/elementMarker/elementMarkerController.js"></script>
+
+    <script src="../core/ui/modules/whiteList/whiteListController.js"></script>
+    <script src="../core/ui/modules/whiteList/whiteListLogic.js"></script>
+
+    <script src="../core/ui/modules/supportUploader/supportUploaderLogic.js"></script>
+
+    <!-- share js START -->
+    <script src="../core/ui/modules/share/jssocials/jssocials.js"></script>
+    <script src="../core/ui/modules/share/horizontalShareLogic.js"></script>
+    <script src="../core/ui/modules/share/horizontalShareController.js"></script>
+
+    <script src="../core/ui/modules/dontForgetToSmile/dontForgetToSmileController.js"></script>
+
+    <script src="../app/ui/modules/spoilers/spoilersController.js"></script>
+    <script src="../app/ui/modules/spoilers/spoilersLogic.js"></script>
+    <script src="../app/ui/modules/spoilerCategories/spoilerCategoriesController.js"></script>
+    <script src="../app/ui/modules/spoilerCategories/spoilerCategoriesLogic.js"></script>
+    <script src="../app/ui/modules/spoilerContexts/spoilerContextsController.js"></script>
+    <script src="../app/ui/modules/spoilerContexts/spoilerContextsLogic.js"></script>
+    <script src="../app/ui/modules/openFacebookGroupUrl/openFacebookGroupUrlController.js"></script>
+    <script src="../app/ui/modules/openFacebookGroupUrl/openFacebookGroupUrlLogic.js"></script>
+    <script src="../app/ui/modules/spoilerCoverBackground/spoilerCoverBackgroundController.js"></script>
+    <script src="../app/ui/modules/spoilerCoverBackground/spoilerCoverBackgroundLogic.js"></script>
+
+    <script src="../app/utilities/settings.js"></script>
+
+    <script src="../core/eventDispatcher.js"></script>
+
+    <!-- popup js START -->
+    <script src="popup.js"></script>
+</head>
+
+<body>
+<div id="banner">
+    <div id="banner-text-container"> <span id="banner-text" i18n="support_text"></span></div><div id="open-patreon-url-control-container" ></div>
+</div>
+<div style="clear:both">
+    <ul class="nav nav-tabs">
+        <li class="active">
+            <a class="font-weight-bold" href="#spoilersTabContent" data-toggle="tab" i18n="spoiler_keywords"></a>
+        </li>
+        <li>
+            <a id="spoiler-categories-tab" class="font-weight-bold" href="#spoilerCategoriesTabContent" data-toggle="tab" i18n="categories"></a>
+        </li>
+        <li>
+            <a class="font-weight-bold" href="#spoilerContextTabContent" data-toggle="tab" i18n="spoiler_context"></a>
+        </li>
+        <li>
+            <a class="font-weight-bold" href="#settingsTabContent" data-toggle="tab" i18n="settings"></a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="spoilersTabContent">
+            <div  class="half-panel content-panel rbl-border float-left">             
+                <table class='td-padding-4px-table'>
+                    <tbody>    
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='is-images-visible-toggle' checked='checked' data-toggle='toggle' data-width='157' data-onstyle='success' data-offstyle='danger' data-style='quick-animation' i18n-data-on='images_on' i18n-data-off='images_off'>
+                            </td>
+                            <td style="border-right: unset">
+                                <input type='checkbox' id='is-spoiler-name-visible-toggle' checked='checked' data-toggle='toggle' data-width='220' data-onstyle='success' data-offstyle='danger' data-style='quick-animation' i18n-data-on='spoiler_name_on' i18n-data-off='spoiler_name_off'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='checkbox' id='is-videos-visible-toggle' checked='checked' data-toggle='toggle' data-width='157' data-onstyle='success' data-offstyle='danger' data-style='quick-animation' i18n-data-on='videos_on' i18n-data-off='videos_off'>
+                            </td> 
+                            <td>
+                                <input type='checkbox' id='is-spoiler-category-visible-toggle' checked='checked' data-toggle='toggle' data-width='220' data-onstyle='success' data-offstyle='danger' data-style='quick-animation' i18n-data-on='category_name_on' i18n-data-off='category_name_off'>
+                            </td>                           
+                        </tr>
+                        <tr>
+                            <td id="enable-disable-extension-control-container" style="width: 115px;"></td>                                        
+                            <td>
+                                <input type='checkbox' id='is-spoiler-list-visible-toggle' checked='checked' data-toggle='toggle' data-width='115' data-onstyle='success' data-offstyle='danger' data-style='quick-animation' i18n-data-on='list_on' i18n-data-off='list_off'>
+                            </td>
+                        </tr>                         
+                        <tr>
+                            <td id="spoiler-cover-background-controller-container" colspan="2"></td>                            
+                        </tr>                                                                                                                    
+                    </tbody>
+                </table>                  
+            </div>
+            <div id="spoiler-list-control-container" class="half-panel content-panel rb-border float-left"></div>
+        </div>
+
+        <div class="tab-pane" id="spoilerCategoriesTabContent">
+            
+
+            <div class="half-panel content-panel rbl-border float-left">
+                <div id="spoiler-category-list-control-container"></div>
+            </div>
+            <div class="half-panel content-panel rb-border float-left">
+                <div id="white-list-control-container"></div>                
+            </div>
+
+        </div>
+
+        <div class="tab-pane" id="spoilerContextTabContent">
+            <div id="spoiler-context-control-container"></div>
+        </div>
+
+        <div class="tab-pane" id="settingsTabContent">
+            <div class="half-panel content-panel rbl-border float-left">
+                <table class="td-padding-4px-table">
+                    <tbody>
+                        <tr>
+                            <td id="reset-extension-control-container"></td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
+            <div class="half-panel content-panel rb-border float-left">
+                <table class="td-padding-4px-table">
+                    <tbody>
+                        <tr>
+                            <td id="email-feedback-control-container"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="half-panel-no-padding copyright-panel rbl-border float-left">
+    <table class="td-padding-2px-table width-100-percent">
+        <tbody>
+            <tr>
+                <td>
+                    <span i18n="share" ></span>&nbsp;
+                </td>
+                <td>
+                    <div id="share-control-container"></div>
+                </td>
+                <td>
+                    <div id="open-facebook-group-url-control-container"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="half-panel copyright-panel rb-border float-left">
+    <table class="td-padding-2px-table width-100-percent">
+        <tbody>
+        <tr>
+            <td id="dont-forget-to-smile-control-container">
+            </td>
+            <td>
+                <div class="text-align-center" id="display-current-version-control-container"></div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

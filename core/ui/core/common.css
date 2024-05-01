@@ -1,0 +1,151 @@
+.float-left {
+    float: left;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.padding-10px {
+    padding: 10px;
+}
+
+.padding-15px {
+    padding: 15px;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.width-100-percent {
+    width: 100%;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.horizontal-center-content {
+    margin: 0 auto;
+}
+
+.textarea-resize-none {
+    resize: none;
+}
+
+.textarea-2row-height {
+    height: 54px;
+}
+
+.textarea-3row-height {
+    height: 74px;
+}
+
+#left-buttons {
+    vertical-align: top;
+    width: 169px;    
+}
+
+#left-buttons td {
+    border-right: solid 1px #ccc;
+}
+
+#left-buttons .btn-social {
+    padding-left: 33px !important;
+    width: 157px !important;
+}
+
+/*patreon button*/
+#left-buttons .btn-social.btn-warning {
+    margin-bottom: 8px;
+}
+
+
+.td-padding-4px-table > tbody > tr > td {
+    padding: 4px;
+}
+
+.td-padding-2px-table > tbody > tr > td {
+    padding: 2px;
+}
+
+.td-vertical-center-content-table td {
+    display: inline-flex;
+}
+
+.tr-height-40px-table > tbody > tr {
+    height: 40px;
+}
+
+a.text-decoration-none {
+    text-decoration:none;
+}
+
+.color-red {
+    color: #c20029;
+}
+
+
+
+#banner #banner-text-container {
+    width:450px;
+    float: left;
+}
+
+#banner #banner-text {
+    height: 40px;
+    display: flex;
+    padding-left: 4px;
+    align-items: center;
+    background-color: whitesmoke;
+    color: red;
+
+    -webkit-animation: changeFontSize 0.8s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: changeFontSize 0.8s; /* Firefox < 16 */
+    -ms-animation: changeFontSize 0.8s; /* Internet Explorer */
+    -o-animation: changeFontSize 0.8s; /* Opera < 12.1 */
+    animation: changeFontSize 0.8s;
+    animation-timing-function: linear;
+}
+
+#banner #open-patreon-url-control-container {
+    height: 40px;
+    display: flex;
+    padding-left: 4px;
+    align-items: center;
+    background-color: whitesmoke;
+    color: red;
+}
+
+
+
+
+@keyframes changeFontSize {
+    from { font-size: 1px;  }
+    to   { font-size: 12px;  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes changeFontSize {
+    from { font-size: 1px;  }
+    to   { font-size: 12px;  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes changeFontSize {
+    from { font-size: 1px;  }
+    to   { font-size: 12px;  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes changeFontSize {
+    from { font-size: 1px;  }
+    to   { font-size: 12px;  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes changeFontSize {
+    from { font-size: 1px;  }
+    to   { font-size: 12px;  }
+}

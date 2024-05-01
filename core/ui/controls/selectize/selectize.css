@@ -1,0 +1,15 @@
+.td-vertical-center-content-table .selectize-input
+{
+    padding-top: 7px !important;
+    overflow: unset !important;
+}
+
+.td-vertical-center-content-table .selectize-input input
+{
+    font-size: 14px !important;
+}
+
+.selectize-input {
+    padding-top: 8px !important;
+    font-size: 15px;
+}

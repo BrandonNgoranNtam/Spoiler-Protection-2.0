@@ -1,0 +1,15 @@
+.background-patreon {
+    background-image: url('images/patreon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-kofi {
+    background-image: url('images/kofi.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#open-patreon-url-control-container .btn {
+    margin-right: 4px;
+}

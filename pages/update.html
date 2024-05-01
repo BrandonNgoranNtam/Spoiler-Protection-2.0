@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Spoiler Protection 2.0</title>
+    <meta name="description" content="Spoiler Protection 2.0 - NO MORE SPOILER :)" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Gold Lion Development Kft">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/new-age.css">
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.js"></script>
+
+
+    <!-- ui/modules/shareControl css START -->
+    <link rel="stylesheet" href="../core/ui/modules/share/jssocials/jssocials.css" />
+    <link rel="stylesheet" href="../core/ui/modules/share/jssocials/jssocials-theme-flat.css" />
+    <link rel="stylesheet" href="../core/ui/modules/share/horizontalShareControl.css">
+    <!-- ui/modules/openPatreonUrlControl css START -->
+    <link rel="stylesheet" href="../core/ui/core/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="../core/ui/modules/openPatreonUrl/openPatreonUrlControl.css" />
+
+    <!-- init js START -->
+    <script src="../core/init.js"></script>
+    <!-- ui/core js START -->
+    <script src="../core/ui/core/extend.jquery.js"></script>
+    <!-- extends js START -->
+    <script src="../core/extends/extend.prototypes.js"></script>
+    <script src="../core/extends/nativeAPIs/extend.i18n.js"></script>
+    <script src="../core/extends/nativeAPIs/extend.tabs.js"></script>
+    <!-- utilities js START -->
+    <script src="../core/utilities/utils.js"></script>
+    <script src="../core/utilities/errorHandler.js"></script>
+    <script src="../core/utilities/settings.js"></script>
+    <script src="../core/utilities/message.js"></script>
+    <script src="../core/utilities/googleAnalitics.js"></script>
+    <!-- ui/utilities js START -->
+    <script src="../core/ui/utilities/ui.js"></script>
+    <!-- ui/modules/openPatreonUrlControl js START -->
+    <script src="../core/ui/modules/openPatreonUrl/openPatreonUrlLogic.js"></script>
+    <script src="../core/ui/modules/openPatreonUrl/openPatreonUrlController.js"></script>
+    <!-- ui/modules/share control js START -->
+    <script src="../core/ui/modules/share/jssocials/jssocials.js"></script>
+    <script src="../core/ui/modules/share/horizontalShareLogic.js"></script>
+    <script src="../core/ui/modules/share/horizontalShareController.js"></script>
+
+    <script src="../core/ui/modules/displayCurrentVersion/displayCurrentVersionLogic.js"></script>
+    <script src="../core/ui/modules/displayCurrentVersion/displayCurrentVersionController.js"></script>
+
+    <script src="../app/ui/modules/openFacebookGroupUrl/openFacebookGroupUrlLogic.js"></script>
+    <script src="../app/ui/modules/openFacebookGroupUrl/openFacebookGroupUrlController.js"></script>
+
+    <script src="../app/utilities/settings.js"></script>
+
+    <!--settingModifierModules-->
+    <script src="../core/ui/modules/enableDisableExtension/enableDisableExtensionLogic.js"></script>
+    <script src="../core/ui/modules/elementMarker/elementMarkerLogic.js"></script>
+    <script src="../core/ui/modules/whiteList/whiteListLogic.js"></script>
+    <script src="../core/ui/modules/supportUploader/supportUploaderLogic.js"></script>
+    <script src="../app/ui/modules/spoilers/spoilersLogic.js"></script>
+    <script src="../app/ui/modules/spoilerCategories/spoilerCategoriesLogic.js"></script>
+    <script src="../app/ui/modules/spoilerContexts/spoilerContextsLogic.js"></script>
+    <script src="../app/ui/modules/spoilerCoverBackground/spoilerCoverBackgroundLogic.js"></script>
+
+    <script src="../core/eventDispatcher.js"></script>
+    <script src="update.js"></script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#masthead" i18n="page_top"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span i18n="menu"></span>
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#features" i18n="recent_updates"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#earlier-updates" i18n="earlier_updates"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead update" id="masthead">
+        <div class="container h-100">
+            <div class="row h-100">
+            <div class="col-lg-6 my-auto">
+                <div class="header-content mx-auto">
+                    <h1 class="mb-3" i18n="yeeeeej"></h1>
+                    <h2 class="mb-3" i18n="update_success"></h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <div>
+                                <a href="#features" class="btn btn-outline btn-xl js-scroll-trigger" i18n="recent_updates"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>If we saved you from spoilers, support the further developments</h3>
+                    <div id="open-patreon-url-control-container"></div>
+                </div>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <h2 i18n="introducing_features"></h2>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/3AE03Wcfem4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact bg-primary" id="contact">
+        <div class="container">
+            <h2 i18n="we_love_old_friends"></h2>
+            <h3 i18n="subscribe_text"></h3>
+            <ul class="list-inline list-social">
+            <li class="list-inline-item social-twitter">
+                <a href="https://twitter.com/wecdevcom" target="blank">
+                <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item social-facebook">
+                <a href="https://www.facebook.com/SpoilerProtection" target="blank">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2 i18n="recent_updates"></h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-auto" id="share-container">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="feature-item">
+                                    <i class="icon-share text-primary"></i>
+                                    <h3 i18n="please_share"></h3>
+                                    <p class="text-muted" i18n="friends_unprotected"></p>
+                                    <div id="share-control-container"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="feature-item">
+                                    <i class="icon-list text-primary"></i>
+                                    <h3 i18n="update_contains_the_following_changes"></h3>
+                                    <h3 class="text-uppercase">2.6.5 - 27. 04. 2020</h3>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>
+                                                <ul>
+                                                    <li>Fix youtube startpage thumbnails</li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="feature-item">
+                                    <i class="icon-list text-primary"></i>
+                                    <h3 i18n="update_contains_the_following_changes"></h3>
+                                    <h3 class="text-uppercase">2.6.2 and 2.6.4 - 22. 04. 2019</h3>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>
+                                                <ul>
+                                                    <li>Show videos is set to off state after update</li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="feature-item">
+                                    <i class="icon-list text-primary"></i>
+                                    <h3 i18n="update_contains_the_following_changes"></h3>
+                                    <h3 class="text-uppercase">2.6.1 - 22. 04. 2019</h3>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>
+                                                <ul>
+                                                    <li>It was not obvious the turn on off images button works on videos too. Now it's two buttons now</li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="feature-item">
+                                    <i class="icon-list text-primary"></i>
+                                    <h3 i18n="update_contains_the_following_changes"></h3>
+                                    <h3 class="text-uppercase">2.6.0 - 19. 04. 2019</h3>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <span>
+                                                <ul>
+                                                    <li>Improved firefox performance</li>
+                                                    <li>Whilelist works on exact urls and wildcard urls too (e.g. google*)</li>
+                                                    <li>Popup spoiler page redesign</li>
+                                                    <li>New update and welcome page design</li>
+                                                    <li>Adding unistall survey</li>
+                                                    <li>Bugfix - Link in paragraph covers the full paraghraph not just the link</li>
+                                                    <li>Bugfix - Remove youtube suggesions consider extension on/off state</li>
+                                                    <li>Bugfix - Remove images consider extension on/off state</li>
+                                                    <li>Bugfix - Remove images consider white lists</li>
+                                                    <li>Bugfix - Remove images off didn't worked</li>
+                                                </ul>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="earlier-updates bg-primary text-center" id="earlier-updates">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <h2 class="text-uppercase" i18n="earlier_updates"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 feature-item">
+                    <h3 class="text-uppercase">2.5.1 - 13. 04. 2019</h3>
+                    <br />
+                    <p i18n="update_contains_the_following_changes"></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                                <ul>
+                                    <li>Quick fix - Facebook image doesn't showed correctly - unfortunatelly to
+                                        enable images you have to reload the page (fix will be in 2.6.0)</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 feature-item">
+                    <h3 class="text-uppercase">2.5.0 - 13. 04. 2019</h3>
+                    <br />
+                    <p i18n="update_contains_the_following_changes"></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                                <ul>
+                                    <li>Import export function changes</li>
+                                    <li>Performance improvements</li>
+                                    <li>Remove every image everywhere</li>
+                                    <li>Cover every video</li>
+                                    <li>Remove youtube video layer at end of the videos</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 feature-item">
+                    <h3 class="text-uppercase">2.4.0 - 22. 12. 2018</h3>
+                    <br />
+                    <p i18n="update_contains_the_following_changes"></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                                <ul>
+                                    <li>Firefox MOBILE compatibility</li>
+                                    <li>Import export function changes (you can share and import categories via a
+                                        new website, also you can earn money if you share)</li>
+                                    <li>Performance improvements</li>
+                                    <li>Show hide category name on the spoiler boxes</li>
+                                    <li>Change selection for spoiler box background color, or hide those completely
+                                        (press x on the color selector)</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 feature-item">
+                    <h3 class="text-uppercase">2.3.0 - 27. 10. 2018</h3>
+                    <br />
+                    <p i18n="update_contains_the_following_changes"></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                                <ul>
+                                    <li>Major performance improvements</li>
+                                    <li>Force share to access import function has been removed</li>
+                                    <li>Firefox compatibility</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 feature-item">
+                    <h3 class="text-uppercase">2.2.0</h3>
+                    <p i18n="update_contains_the_following_changes"></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                                <ul>
+                                    <li>Simplified category import</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 feature-item">
+                    <h3 class="text-uppercase">2.1.0</h3>
+                    <p i18n="update_contains_the_following_changes"></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                                Dear users<br />
+                                <br />The google banned our original extension because of a source code policy
+                                violation, so we seize the oppurtunity to renew the Spoiler Protection 2.0 extension
+                                <br />We implemented some new functions. And we will implement more in the near
+                                future<br />
+                                <br />
+                                <ul>
+                                    <li>Optimized design</li>
+                                    <li>Spoiler context: this will helps to clear the surrounding context of the
+                                        spoiler not just the text/image</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 feature-item">
+                    <h3 class="text-uppercase">2.0.0</h3>
+                    <p i18n="update_contains_the_following_changes"></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>
+                                <ul>
+                                    <li>Complete rewrite of the original Spoiler Protection extension</li>
+                                </ul>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p i18n="all_rights_reserved"></p>
+        </div>
+    </footer>
+</body>
+</html>

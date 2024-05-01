@@ -1,0 +1,430 @@
+{
+  "app_name": {
+    "message": "Spoiler Protection 2.0"
+  },
+  "app_description": {
+    "message": "Spoiler Protection 2.0 - NO MORE SPOILERS :)"
+  },
+  "all_rights_reserved": {
+    "message": "&copy; Spoiler Protection 2.0 - 2019. All Rights Reserved."
+  },
+  "subscribe_text": {
+    "message": "<b>Subscribe</b> and don't miss the news about the upcoming features and new extensions"
+  },  
+  "page_top": {
+    "message": "Page top"
+  }, 
+  "menu": {
+    "message": "Menu"
+  }, 
+  "available_for_mobile": {
+    "message": "From NOW <u>Spoiler Protection 2.0</u> is available on <b>Mobile</b>, use with <u>Firefox for Android</u>"
+  },
+  "support_text": {
+    "message": "free for those who can't afford it, supported by those who can. "
+  },  
+  "please_select": {
+    "message": "Please select"
+  },
+  "select": {
+    "message": "Select"
+  },
+  "follow_us": {
+    "message": "Follow us"
+  },
+  "yes": {
+    "message": "Yes"
+  },
+  "no": {
+    "message": "No"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "reset": {
+    "message": "Reset"
+  },
+  "import": {
+    "message": "Import"
+  },
+  "success": {
+    "message": "Success"
+  },
+  "error": {
+    "message": "Error"
+  },
+  "warning": {
+    "message": "Warning"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "new_extensions": {
+    "message": "New browser extensions"
+  },
+  "show": {
+    "message": "Show"
+  },
+  "item_already_exists_with_name": {
+    "message": "An item already exists with this name"
+  },
+  "name_required": {
+    "message": "Name is required"
+  },
+  "delete_question": {
+    "message": "Are you sure to delete this item?"
+  },
+  "edit": {
+    "message": "Edit"
+  },
+  "enable_disable": {
+    "message": "Enable/Disable"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "name": {
+    "message": "Name"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "list": {
+    "message": "List"
+  },
+  "description": {
+    "message": "Description"
+  },
+  "download": {
+    "message": "Download"
+  },
+  "facebook": {
+    "message": "Facebook"
+  },
+  "ask_in_facebook_group": {
+    "message": "Ask the Facebook group"
+  },
+  "join": {
+    "message": "Join"
+  },
+  "please_share": {
+    "message": "Please share"
+  },
+  "share": {
+    "message": "Share"
+  },
+  "share_earn_money": {
+    "message": "Share and earn money"
+  },
+  "on": {
+    "message": "On"
+  },
+  "off": {
+    "message": "Off"
+  },
+  "list_on": {
+    "message": "List on"
+  },
+  "list_off": {
+    "message": "List off"
+  },
+  "shown": {
+    "message": "Shown"
+  },
+  "hidden": {
+    "message": "Hidden"
+  },
+  "version": {
+    "message": "Version"
+  },
+  "language": {
+    "message": "Language"
+  },
+  "type": {
+    "message": "Type"
+  },
+  "support_patreon": {
+    "message": "Donate &#36;1/month"
+  },
+  "support_kofi": {
+    "message": "Buy me a Ko-fi :)"
+  },  
+  "dont_forget_to_smile": {
+    "message": "Don't forget to smile today"
+  },
+  "save_successful": {
+    "message": "Save successful"
+  },
+  "extension_on": {
+    "message": "Extension on"
+  },
+  "extension_off": {
+    "message": "Extension off"
+  },
+  "we_know_we_can_do_better": {
+    "message": "<b>We know we can do better.</b><br/>If you have new function idea, any suggestion or would like to report a bug"
+  },
+  "tell_us": {
+    "message": "Tell us"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "reset_extension": {
+    "message": "Reset default settings"
+  },
+  "reset_confirm_text": {
+    "message": "Are you sure you want to reset the default settings?\nYou will lose your every current settings!"
+  },
+  "site_url_part_required": {
+    "message": "Web page url part is required"
+  },
+  "site": {
+    "message": "Web page url part "
+  },
+  "enter_classes": {
+    "message": "Class list - Separator is ','"
+  },
+  "enter_ids": {
+    "message":"Id list  - Separator is ',' "
+  },
+  "enter_node_names": {
+    "message": "Node name list - Separator is ','"
+  },
+  "enter_remove_filters": {
+    "message": "Remove filter list - Separator is ','"
+  },
+  "spoiler_context": {
+    "message": "Spoiler context"
+  },
+  "spoiler_context_description": {
+    "message": "On the major sites (twitter, facebook, reddit) we solved to hide the whole context what surrounds the spoiler, but we can't do it on every single site on the internet.<br/>With this function you can personalize your favorite sites to solve this problem."
+  },
+  "import_category": {
+    "message": "Import category"
+  },
+  "manage_categories": {
+    "message": "Manage categories"
+  },  
+  "import_category_success": {
+    "message": "Import category success"
+  },  
+  "are_you_sure_to_import_category": {
+    "message": "Are you sure to import this category: "
+  },
+  "category_imported": {
+    "message": "This category hase been imported: "
+  },
+  "uploader": {
+    "message": "Uploader"
+  },
+  "spoiler_count": {
+    "message": "Spoiler count"
+  },
+  "support_the_uploader": {
+    "message": "You can support the uploader: "
+  },
+  "support_patreon_uploder": {
+    "message": "Support uploader via Patreon"
+  },
+  "support_kofi_uploder": {
+    "message": "Or buy her/him a Ko-fi"
+  },
+  "share_list_on_twitter": {
+    "message": "Share list on twitter"
+  },
+  "share_list_on_facebook": {
+    "message": "Share list on facebook"
+  },
+  "waiting_for_approval": {
+    "message": "Waiting for approval"
+  },
+  "show_the_list": {
+    "message": "Show the list"
+  },
+  "edit_category": {
+    "message": "Edit category"
+  },
+  "remove_category": {
+    "message": "Remove category"
+  },
+  "remove_spoiler_text": {
+    "message": "Remove spoiler text"
+  },
+  "other": {
+    "message": "Other"
+  },
+  "movie": {
+    "message": "Movie"
+  },
+  "tv_show": {
+    "message": "TV show"
+  },
+  "game": {
+    "message": "Game"
+  },
+  "sport": {
+    "message": "Sport"
+  },
+  "politics": {
+    "message": "Politics"
+  },
+  "share_your_category_with_other_people": {
+    "message": "Share your category with other people"
+  },
+  "expiration_date_explanation": {
+    "message": "This date doesn't affect your spoiler protection list! After this date the shared category will not be available on the website where others can import from"
+  },
+  "expiration_date": {
+    "message": "Expiration date"
+  },
+  "earn_money": {
+    "message": "Your friends/followers can support you with <u class='color-red' style='font-weight: bold'>money</u> via ko-fi.com or patreon.com to create more categories"
+  },
+  "share_warning": {
+    "message": "Please share categories with only for ONE topic (one tv show, one movie...), write at least 5 keyword, and don't spoil :)<br/>We reserve the right to not approve your shared category."
+  },
+  "your_kofi_username": {
+    "message": "Your ko-fi username"
+  },
+  "your_patreon_username": {
+    "message": "Your patreon username"
+  },
+  "export_success_text": {
+    "message": "Export successful your category will be approved soon.<br/>Now you can go and share your category at<br/>https://spoilerprotection.wecdev.com/categorylist"
+  },
+  "just_for_myself": {
+    "message": "Just for myself"
+  },
+  "visit_page_and_share": {
+    "message": "Visit category list page and share"
+  },
+  "spoiler_name_on": {
+    "message": "Show keywords on websites"
+  },
+  "spoiler_name_off": {
+    "message": "Hide keywords on websites"
+  },
+  "category_name_on": {
+    "message": "Show category on websites"
+  },
+  "category_name_off": {
+    "message": "Hide category on websites"
+  },
+  "images_on": {
+    "message": "Images on"
+  },
+  "images_off": {
+    "message": "Images off"
+  },
+  "videos_on": {
+    "message": "Videos on"
+  },
+  "videos_off": {
+    "message": "Videos off"
+  },
+   "add_spoilers": {
+    "message": "Add spoilers"
+  },
+  "enter_spoilers": {
+    "message": "Tyrion,Daenerys,Jon Snow"
+  },
+  "save_category": {
+    "message": "Save category"
+  },
+  "new_category": {
+    "message": "New category"
+  },
+  "spoiler_keywords": {
+    "message": "Spoiler keywords"
+  },
+  "categories": {
+    "message": "Categories"
+  },
+  "category_spoiler_text_required": {
+    "message": "Spoiler list is empty!"
+  },
+  "category_name_required": {
+    "message": "Category name is required!"
+  },
+  "existing_category": {
+    "message": "Existing category"
+  },
+  "remove_white_list_url_text": {
+    "message": "Remove white list url"
+  },
+  "white_list": {
+    "message": "White list"
+  },
+  "add_white_list_url": {
+    "message": "Add white list url"
+  },
+  "enter_white_list_url": {
+    "message": "e.g. google* or exact url"
+  },
+  "background_color":{
+    "message": "Background color"
+  },
+  
+
+  "yeeeeej": {
+    "message": "Yeeeeej"
+  },
+  "update_contains_the_following_changes": {
+    "message": "This update contains the following changes:"
+  },
+  "earlier_updates": {
+    "message": "Earlier updates"
+  },
+  "recent_updates": {
+    "message": "Recent updates"
+  },  
+  "we_love_old_friends": {
+    "message": "We <img width='64' height='64' src='../images/icon128.png' alt='' title=''> old friends!"
+  },
+  "friends_unprotected": {
+    "message": "A lot of your friends are unprotected!"
+  },
+  "update_success": {
+    "message": "Spoiler Protection 2.0 was successfully updated!"
+  },
+
+
+  "welcome": {
+    "message": "Welcome"
+  },
+  "introducing_features": {
+    "message": "Introducing main features"
+  },
+  "install_success": {
+    "message": "Spoiler Protection 2.0 was successfully installed!"
+  },
+  "we_love_new_friends": {
+    "message": "We <img width='64' height='64' src='../images/icon128.png' alt='' title=''> new friends!"
+  },
+  "rid_of_spoilers_text": {
+    "message": "This extension helps you to hide spoilers what you don't want to see on your screen. You can hide spoilers from ..."
+  },
+  "from_facebook": {
+    "message": "facebook"
+  },
+  "from_twitter": {
+    "message": "twitter"
+  },
+  "from_youtube": {
+    "message": "youtube"
+  },
+  "from_google": {
+    "message": "google"
+  },
+  "from_news_sites": {
+    "message": "news sites"
+  },
+  "from_etc": {
+    "message": "etc..."
+  }
+  
+}

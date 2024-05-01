@@ -1,0 +1,190 @@
+body
+{
+    width: 800px;
+    height: 570px;
+    background-image: url("images/background.jpg");
+    background-color: #fff;
+}
+
+hr
+{
+    margin: 0 0 0 0 !important;
+    border-top: 1px solid #ccc;
+}
+
+@keyframes blink {
+    50% { border: #ff0000 solid 1px; }
+}
+.blink-red-10 {
+    animation: blink .7s step-end 10 alternate;
+}
+
+.blink-red-5 {
+    animation: blink .7s step-end 5 alternate;
+}
+
+/* Tabs START */
+.nav-tabs > li > a
+{
+    border: 1px solid #ccc !important;
+}
+
+.tab-pane
+{
+    width: 100%;
+}
+
+.half-panel
+{
+    vertical-align: top;
+    width: 50%;    
+}
+
+.half-panel-no-padding
+{
+    vertical-align: top;
+    width: 50%;
+}
+
+.content-panel {
+    height: 450px;
+}
+
+.copyright-panel {
+    height: 36px;
+}
+
+.half-panel .full-input-width
+{
+   width: 353px;
+}
+
+.full-border
+{
+    border: 1px solid #ccc;
+}
+
+.trb-border
+{
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.rbl-border
+{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.rb-border
+{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Tabs END */
+
+
+
+
+/* Spoiler START */
+
+/*height is dependent how many html element are top of the table*/
+/*we need height to get the scroll if content overflows*/
+.spoiler-list-container
+{
+    height: 285px;
+    overflow: auto;
+}
+
+#spoiler-text {
+    width: 353px;
+}
+
+#spoiler-header-text {
+    width: 240px;
+}
+
+
+/* Spoiler END */
+
+/* Spoiler category START */
+
+/*height is dependent how many html element are top of the table*/
+/*we need height to get the scroll if content overflows*/
+.category-list-container
+{
+    height: 260px;
+    overflow: auto;    
+}
+
+ul.ui-autocomplete {
+    max-width: 370px;
+    max-height: 406px;    
+    overflow: auto;
+}
+
+ul.ui-autocomplete li{
+    border-bottom: 1px solid grey;
+}
+
+#category-selector {
+    width: 228px;
+}
+
+#category-name
+{
+    width: 136px;
+}
+
+.edit-category-spoiler
+{
+    height: 250px !important;
+    width: 388px;
+}
+
+#spoiler-category-edit-table .selectize-control
+{
+    width: 103px;
+}
+
+.import-select {
+    width: 287px;
+}   
+
+
+/* Spoiler category END */
+
+/* Spoiler context list START */
+
+/*height is dependent how many html element are top of the table*/
+/*we need height to get the scroll if content overflows*/
+.spoiler-context-list-container
+{
+    height: 288px;
+    overflow: auto;
+}
+
+
+.description-text {
+    padding: 5px 5px 5px 5px;
+    text-align: justify;
+}
+
+/* Spoiler context list END */
+
+/* White list list START */
+
+
+
+
+.white-list-container {
+    height: 376px;
+    overflow: auto;    
+}
+
+/* White list list END */
+
+

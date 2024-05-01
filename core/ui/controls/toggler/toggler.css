@@ -1,0 +1,5 @@
+/*NOTE: this is for the set default value without animation*/
+.quick-animation .toggle-group {
+    transition: none;
+    -webkit-transition: none;
+}

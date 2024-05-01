@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spoiler Protection 2.0</title>
+    <meta name="description" content="Spoiler Protection 2.0 - NO MORE SPOILER :)" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="author" content="Gold Lion Development Kft">
+	
+	<!--todo: put these to the core-->
+	<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<!-- Custom fonts for this template -->
+	<link rel="stylesheet" href="vendor/fontawesome-free/css/all.css" >
+	<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" href="css/new-age.css" >    
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.js"></script>
+
+    <!-- init js START -->
+    <script src="../core/init.js"></script>
+    <!-- ui/core js START -->    
+    <script src="../core/ui/core/extend.jquery.js"></script>
+    <!-- extends js START -->
+    <script src="../core/extends/extend.prototypes.js"></script>
+    <script src="../core/extends/nativeAPIs/extend.i18n.js"></script>
+    <script src="../core/extends/nativeAPIs/extend.tabs.js"></script>
+    <!-- utilities js START -->
+    <script src="../core/utilities/utils.js"></script>
+    <script src="../core/utilities/errorHandler.js"></script>
+    <script src="../core/utilities/settings.js"></script>
+    <script src="../core/utilities/message.js"></script>
+    <script src="../core/utilities/googleAnalitics.js"></script>
+    <!-- ui/utilities js START -->
+    <script src="../core/ui/utilities/ui.js"></script>
+    <!-- ui/modules/openPatreonUrlControl js START -->
+    <script src="../core/ui/modules/openPatreonUrl/openPatreonUrlLogic.js"></script>
+    <script src="../core/ui/modules/openPatreonUrl/openPatreonUrlController.js"></script>
+    <!-- ui/modules/share control js START -->
+    <script src="../core/ui/modules/share/jssocials/jssocials.js"></script>
+    <script src="../core/ui/modules/share/horizontalShareLogic.js"></script>
+    <script src="../core/ui/modules/share/horizontalShareController.js"></script>
+
+    <script src="../core/ui/modules/displayCurrentVersion/displayCurrentVersionLogic.js"></script>
+    <script src="../core/ui/modules/displayCurrentVersion/displayCurrentVersionController.js"></script>
+
+    <script src="../app/ui/modules/openFacebookGroupUrl/openFacebookGroupUrlLogic.js"></script>
+    <script src="../app/ui/modules/openFacebookGroupUrl/openFacebookGroupUrlController.js"></script>
+
+    <script src="../app/utilities/settings.js"></script>
+
+    <!--settingModifierModules-->
+    <script src="../core/ui/modules/enableDisableExtension/enableDisableExtensionLogic.js"></script>
+    <script src="../core/ui/modules/elementMarker/elementMarkerLogic.js"></script>
+    <script src="../core/ui/modules/whiteList/whiteListLogic.js"></script>
+    <script src="../core/ui/modules/supportUploader/supportUploaderLogic.js"></script>
+    <script src="../app/ui/modules/spoilers/spoilersLogic.js"></script>
+    <script src="../app/ui/modules/spoilerCategories/spoilerCategoriesLogic.js"></script>
+    <script src="../app/ui/modules/spoilerContexts/spoilerContextsLogic.js"></script>    
+    <script src="../app/ui/modules/spoilerCoverBackground/spoilerCoverBackgroundLogic.js"></script>
+
+    <script src="../core/eventDispatcher.js"></script>
+    <script src="welcome.js"></script>
+
+</head>
+<body>    
+
+  <header class="masthead" id="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-6 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-3" i18n="welcome"></h1>            
+            <h2 class="mb-3" i18n="install_success"></h2>                        
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <h1 class="text-uppercase" i18n="rid_of_spoilers"></h1>
+                        <p i18n="rid_of_spoilers_text"></p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <span>...</span> <span i18n="from_facebook"></span>
+                            </li>
+                            <li>
+                                <span>...</span>&nbsp;<span i18n="from_twitter"></span>
+                            </li>
+                            <li>
+                                <span>...</span>&nbsp;<span i18n="from_youtube"></span>
+                            </li>
+                            <li>
+                                <span>...</span>&nbsp;<span i18n="from_google"></span>
+                            </li>
+                            <li>
+                                <span>...</span>&nbsp;<span i18n="from_news_sites"></span>
+                            </li>
+                            <li>
+                                <span>...</span>&nbsp;<span i18n="from_etc"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 my-auto">
+            <h2 i18n="introducing_features"></h2>            
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/3AE03Wcfem4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                        
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2 i18n="we_love_new_friends"></h2>
+      <h3 i18n="subscribe_text"></h3>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter">
+          <a href="https://twitter.com/wecdevcom" target="blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-facebook">
+          <a href="https://www.facebook.com/SpoilerProtection" target="blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>        
+      </ul>
+    </div>
+  </section>
+    
+  <footer>
+    <div class="container">
+      <p i18n="all_rights_reserved"></p>      
+    </div>
+  </footer>
+</body>
+</html>
