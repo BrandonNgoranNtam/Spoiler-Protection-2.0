@@ -1,61 +1,57 @@
 (function () {
     "use strict";
 
+    // Extend the core.markAndReplace object with additional properties and methods
     $.extend(core.markAndReplace, {
 
-        //#region properties and consts
 
+        // Regular expressions for matching non-alphanumeric characters
         NON_NUMBER_AND_NON_LETTER_OUTSIDE_REG_EXP: /[^a-z0-9]/,
         NON_NUMBER_AND_NON_LETTER_INSIDE_REG_EXP: "[^a-z0-9]",
         NUMBER_OR_LETTER_OUTSIDE_REG_EXP: /[a-z0-9]/,
 
-        //a két tömb index alapján egyezik, hogy a text-hez milyen spoiler string tartozik, így valszeg gyorsabb, mint egy objektum lista lenne, és azon iterálgatni végig
+        // Caches for text and corresponding spoiler strings
         textCache: [],
         spoilerStringCache: [],
 
-
+        // List of normalized spoiler strings
         normalizedSpoilerStringList: [],
 
-        //#endregion
-
-        //#region init
-
-        //#endregion
-
-        //#region public functions
-
-        //#endregion
-
-        //#region private functions
-
+    
+        // Marks an element for replacement and hides it
         markElementForReplaceDivAndHide: function (elementToReplace, displayString) {
+            // Skip marking if site-specific conditions are met
             if (core.markAndReplace.siteSpecificSkipMarking) {
                 if (core.markAndReplace.siteSpecificSkipMarking(elementToReplace)) {
                     return;
                 }
             }
-
+            // If the element is already marked, return
             if (elementToReplace.hasAttribute(core.markAndReplace.REPLACE_NEEDED_ATTRIBUTE_NAME)) {
                 return;
             }
 
+            // Get the full display string for the spoiler
             displayString = core.markAndReplace.getFullDisplayString(displayString);
             var originalStyle = elementToReplace.getAttribute("style");
             var elementToReplaceWidth = core.markAndReplace.getElementToReplaceWidth(elementToReplace);
             var elementToReplaceHeight = core.markAndReplace.getElementToReplaceHeight(elementToReplace);
 
+            // Set attributes to mark the element for replacement
             elementToReplace.setAttribute(core.markAndReplace.REPLACE_NEEDED_ATTRIBUTE_NAME, "true");
             elementToReplace.setAttribute(core.markAndReplace.REPLACE_TEXT_ATTRIBUTE_NAME, displayString);
             elementToReplace.setAttribute(core.markAndReplace.ORIGINAL_STYLE_ATTRIBUTE_NAME, originalStyle);
             elementToReplace.setAttribute(core.markAndReplace.ORIGINAL_WIDTH_ATTRIBUTE_NAME, elementToReplaceWidth);
             elementToReplace.setAttribute(core.markAndReplace.ORIGINAL_HEIGHT_ATTRIBUTE_NAME, elementToReplaceHeight);
 
+            // Hide the element
             elementToReplace.style.display = "none";
 
             //elementToReplace.style.filter = "blur(10px)";
             //elementToReplace.style.visibility = "hidden";
         },
 
+        // Constructs the full display string for a spoiler
         getFullDisplayString: function (displayString) {
             var res = "";
             if (app.ui.modules.spoilersLogic.getIsSpoilerCategoryVisible()) {
@@ -72,6 +68,7 @@
 
         },
 
+        // Determines if the given text should be replaced with a spoiler string
         shouldReplaceText: function (text, withUrlDecode) {
             var res = {};
             res.shouldReplace = false;
@@ -91,6 +88,7 @@
             return res;
         },
 
+         // Finds a matching spoiler string in the given text
         getMatchingSpoilerStringInText: function (text, withUrlDecode) {
 
             var normalizeLowerText;
@@ -100,7 +98,7 @@
                 normalizeLowerText = text.normalizeString().toLowerCase();
             }
 
-            //there is no letter or number in the text
+            // If there are no alphanumeric characters in the text, return null
             if (core.utilities.utils.isNullOrEmpty(normalizeLowerText.match(core.markAndReplace.NUMBER_OR_LETTER_OUTSIDE_REG_EXP))) {
                 return null;
             }
@@ -110,6 +108,7 @@
                 var spoilerString = spoilerList[i];
                 var normalizedLowerSpoilerString = core.markAndReplace.normalizedSpoilerStringList[i];
 
+                // If the spoiler string consists of a single word, check various conditions
                 //NOTE: Ha csak egy szóból áll a spoilerString, akkor az alább felsorolt vizsgálatok alapján adjuk vissza.
                 //      Ha több szóból áll, akkor replace-eljük az összes nem szám és betű karaktert és megnézzük, hogy tartalmazza-e.
                 if (normalizedLowerSpoilerString.split(core.markAndReplace.NON_NUMBER_AND_NON_LETTER_OUTSIDE_REG_EXP).length === 1) {
@@ -136,6 +135,7 @@
             return null;
         },
 
+        // Initializes performance-related settings
         performanceInit: function () {
             core.markAndReplace.normalizedSpoilerStringList = [];
             var spoilerList = core.utilities.settings.spoilers.spoilerStringList;
@@ -144,6 +144,8 @@
             }
         },
 
+        
+        // Gets the context of the spoiler within the element
         getSpoilerContext: function (elementToReplace) {
             var res = elementToReplace;
 
@@ -195,11 +197,13 @@
             return false;
         },
 
+        // Clears the caches for text and spoiler strings
         extensionSpecificClearReplaceDivs: function () {
             core.markAndReplace.textCache = [];
             core.markAndReplace.spoilerStringCache = [];
         },
 
+        // Modifies import divs for spoiler categories
         modifyImportDivs: function () {
             if ($("#extension-installed").length == 0) {
                 $("body").append("<div style='display:none' id='extension-installed'></div>")
@@ -273,8 +277,6 @@
 
             });
         }
-
-        //#endregion
 
     });
 
